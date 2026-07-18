@@ -1,9 +1,15 @@
+import Image from "next/image";
+
 export default function EggCard() {
   return (
     <div className="flex justify-center py-12">
-      <div className="text-8xl animate-bounce">
-        🥚
-      </div>
+      <Image
+        src="/eggs/default_egg.png"
+        alt="창제알"
+        width={180}
+        height={180}
+        priority
+      />
     </div>
   );
 }
