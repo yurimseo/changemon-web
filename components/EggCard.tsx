@@ -9,8 +9,8 @@ export default function EggCard() {
         <Image
           src="public/eggs/grass.png"
           alt="풀"
-          width={180}
-          height={60}
+          width={230}
+          height={80}
           className="absolute bottom-0 left-1/2 -translate-x-1/2"
           priority
         />
@@ -20,8 +20,8 @@ export default function EggCard() {
           <Image
             src="public/eggs/egg.png"
             alt="창제알"
-            width={120}
-            height={120}
+            width={200}
+            height={200}
             priority
           />
         </div>
