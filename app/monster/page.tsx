@@ -11,7 +11,7 @@ import { calculateResult, Scores, VBTIResult } from "@/lib/vbti";
 const monsterInfo = {
   leafon: {
     name: "리프온",
-    image: "/monsters/leafon.png",
+    image: "/monsters/cards/leafon.png",
     type: "🌱 성장형",
     description: "새로운 도전을 즐기며 한 걸음씩 앞으로 나아가는 창제몬",
     quote: "안녕! 앞으로 우리 함께 성장하자! 🌱",
@@ -20,7 +20,7 @@ const monsterInfo = {
 
   lightning: {
     name: "라이트닝",
-    image: "/monsters/lightning.png",
+    image: "/monsters/cards/lightning.png",
     type: "⭐ 희망형",
     description: "긍정적인 에너지로 주변을 환하게 비추는 창제몬",
     quote: "희망은 언제나 우리 곁에 있어! ⭐",
@@ -29,7 +29,7 @@ const monsterInfo = {
 
   pyron: {
     name: "파이론",
-    image: "/monsters/pyron.png",
+    image: "/monsters/cards/pyron.png",
     type: "🔥 용기형",
     description: "어떤 어려움도 두려워하지 않는 용감한 창제몬",
     quote: "망설이지 말고 한 걸음 내딛어! 🔥",
@@ -38,7 +38,7 @@ const monsterInfo = {
 
   heartmi: {
     name: "하트미",
-    image: "/monsters/heartmi.png",
+    image: "/monsters/cards/heartmi.png",
     type: "❤️ 공감형",
     description: "따뜻한 마음으로 모두를 이어주는 창제몬",
     quote: "네 마음을 소중히 간직해 줄게. ❤️",
@@ -47,7 +47,7 @@ const monsterInfo = {
 
   wizron: {
     name: "위즈론",
-    image: "/monsters/wizron.png",
+    image: "/monsters/cards/wizron.png",
     type: "💎 지혜형",
     description: "깊은 통찰력으로 올바른 길을 제시하는 창제몬",
     quote: "천천히 생각해도 괜찮아. 💎",
