@@ -17,6 +17,8 @@ export default function HatchVideoPage() {
   const [result, setResult] =
     useState<VBTIResult | null>(null);
 
+  const [isPlaying, setIsPlaying] = useState(false);
+
   useEffect(() => {
     const saved = localStorage.getItem("vbtiScores");
 
@@ -37,13 +39,17 @@ export default function HatchVideoPage() {
       <div className="flex min-h-[70vh] items-center justify-center">
 
         <video
-        className="w-full max-w-sm rounded-2xl shadow-lg"
-        src={`/videos/hatch/${result.monsterCode}.mp4`}
-        autoPlay
-        muted
-        playsInline
-        controls={false}
-        onEnded={() => router.push("/monster")}
+          className={`w-full max-w-sm rounded-2xl shadow-lg transition-opacity duration-200 ${
+            isPlaying ? "opacity-100" : "opacity-0"
+          }`}
+          src={`/videos/hatch/${result.monsterCode}.mp4`}
+          autoPlay
+          muted
+          playsInline
+          controls={false}
+          preload="auto"
+          onPlay={() => setIsPlaying(true)}
+          onEnded={() => router.push("/monster")}
         />
 
       </div>
