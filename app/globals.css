@@ -14,7 +14,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "NeoDGM", sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --font-mono: "NeoDGM", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
