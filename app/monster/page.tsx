@@ -93,21 +93,14 @@ export default function MonsterPage() {
 
   if (!monster || !scores) return null;
 
-   const handleSave = () => {
-  if (!monster || !scores) return;
+const handleSave = () => {
+  if (!scores) return;
 
   const result = calculateResult(scores);
 
-  const link = document.createElement("a");
-  link.href = `/monsters/cards/${result.monsterCode}.png`;
-  link.download = `${monster.name}_도감카드.png`;
-
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-
-  alert("도감 카드 다운로드를 시작합니다.");
+  window.location.href = `/monsters/cards/${result.monsterCode}.png`;
 };
+
 
   const maxScore = Math.max(
     scores.growth,
