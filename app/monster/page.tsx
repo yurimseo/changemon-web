@@ -93,27 +93,21 @@ export default function MonsterPage() {
 
   if (!monster || !scores) return null;
 
-    const handleSave = async () => {
-    try {
-      const response = await fetch(monster.image);
-      const blob = await response.blob();
+   const handleSave = () => {
+  if (!monster || !scores) return;
 
-      const url = URL.createObjectURL(blob);
+  const result = calculateResult(scores);
 
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = `${monster.name}_도감카드.png`;
+  const link = document.createElement("a");
+  link.href = `/monsters/cards/${result.monsterCode}.png`;
+  link.download = `${monster.name}_도감카드.png`;
 
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 
-      URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error(error);
-      alert("카드를 저장하지 못했습니다.");
-    }
-  };
+  alert("도감 카드 다운로드를 시작합니다.");
+};
 
   const maxScore = Math.max(
     scores.growth,
