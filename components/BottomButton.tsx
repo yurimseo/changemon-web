@@ -14,16 +14,17 @@ export default function BottomButton({
       onClick={onClick}
       disabled={disabled}
       className="
-        w-full
-        py-4
-        rounded-2xl
-        font-bold
-        text-white
-        bg-green-500
-        active:scale-95
-        transition
-        disabled:bg-gray-300
-      "
+  w-full
+  py-4
+  rounded-2xl
+  font-bold
+  text-white
+  bg-blue-600
+  hover:bg-blue-700
+  active:scale-95
+  transition
+  disabled:bg-gray-300
+"
     >
       {text}
     </button>
