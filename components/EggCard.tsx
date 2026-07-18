@@ -4,7 +4,7 @@ export default function EggCard() {
   return (
     <div className="flex justify-center py-12">
       <Image
-        src="/eggs/default_egg.png"
+        src="public/eggs/default_egg.png"
         alt="창제알"
         width={180}
         height={180}
