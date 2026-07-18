@@ -7,7 +7,7 @@ export default function EggCard() {
 
         {/* 풀 */}
         <Image
-          src="/eggs/grass.png"
+          src="public/eggs/grass.png"
           alt="풀"
           width={180}
           height={60}
@@ -18,7 +18,7 @@ export default function EggCard() {
         {/* 알 */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
           <Image
-            src="/eggs/egg.png"
+            src="public/eggs/egg.png"
             alt="창제알"
             width={120}
             height={120}
